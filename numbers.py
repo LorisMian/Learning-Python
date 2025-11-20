@@ -57,3 +57,14 @@ def number_to_words(n):
     return words.strip()
 
 print(number_to_words(4353))
+
+# Write a function to check display the digits of a number
+def display_digits(n):
+    digits = []
+    while n > 0:
+        digits.append(n % 10)
+        n //= 10
+    digits.reverse()
+    return digits
+
+print(display_digits(4353))
